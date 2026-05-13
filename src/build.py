@@ -39,7 +39,7 @@ pipeline = Pipeline([
 
 def gridsearch():
     param_grid = {
-        'model__model__layers_config': [ # pipeline step name __ parameter in that step
+        'model__model__layers_config': [ # pipeline step name __ parameter in that step 
             [128, 64, 32],
             [64, 32, 16],
             [128, 128, 64]
