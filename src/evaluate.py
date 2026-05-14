@@ -17,7 +17,7 @@ def get_current_best_score():
         return 0
 current_best_score = get_current_best_score()
 
-# recall, best workflow is create model, choose threshold, get best results, decide if said best 
+# recall, best workflow is create model, choose threshold, get best results, decide if said best
 # results are good enough
 
 def best_est():
