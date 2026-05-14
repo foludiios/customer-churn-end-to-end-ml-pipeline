@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler, RobustScaler
 
 def load(bucket_name_, s3_file_path): # folder + file (full ingested data excluding bucket name, that's clearly a separate argument)
     obj = s3.Object(bucket_name_, s3_file_path)
-    data = obj.get()['Body'].read().decode('utf-8')  # read content as string
+    data = obj.get()['Body'].read().decode('utf-8')  # read content as string 
     df = pd.read_csv(StringIO(data))
 
     X, y = df[df.columns[:-1]], df[df.columns[-1]]
