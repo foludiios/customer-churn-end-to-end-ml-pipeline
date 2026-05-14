@@ -16,7 +16,7 @@ def make_prediction(datapoints):
     elif isinstance(datapoints, list):
         if len(datapoints) == len(feature_order) and not isinstance(datapoints[0], list): #single list of single datapoint
             df = pd.DataFrame([datapoints], columns=feature_order)
-        else: # single list of multiple lists each containing a datapoint
+        else: # single list of multiple lists each containing a datapoint 
             df = pd.DataFrame(datapoints, columns=feature_order)
     elif isinstance(datapoints, dict):
         df = pd.DataFrame([datapoints])
