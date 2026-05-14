@@ -9,7 +9,7 @@ def req(data):
     if isinstance(data, pd.DataFrame):
         data = data.to_dict(orient="records")
     response = requests.post(
-        url, # after running api's xyz:xyz --reload
+        url, # after running api's xyz:xyz --reload 
         json={"data": data}
     )
     print(response.json())
