@@ -1,9 +1,9 @@
 import boto3
 
-bucket_name = 'cuschurn-buck'
+bucket_name = 'cuschurn-buck' #change to unique
 my_region = boto3.Session().region_name
 s3 = boto3.resource('s3')
-local_file = r"C:\Users\Admin\Documents\customer_churn.csv"
+local_file = r"C:\Users\Admin\Documents\customer_churn.csv" # based on file in local directory
 s3_file = 'Ingested Data/' + 'customer_churn.csv'
 folders = ['Ingested Data/', 'Model 1/']
 
