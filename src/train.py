@@ -1,6 +1,6 @@
 import src.build as build
 import src.preprocess as preprocess
-from inception.aws import bucket_name, s3_file
+from inception.aws import bucket_name, s3_file 
 
 def fit():
     X_train, X_val, X_test, y_train, y_val, y_test = preprocess.load(bucket_name, s3_file)
