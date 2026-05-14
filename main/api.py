@@ -3,7 +3,7 @@ from typing import Union, List, Dict
 from typing import Union, List, Dict, Any
 
 
-from src.predict import make_prediction
+from src.predict import make_prediction 
 
 app = FastAPI()
 
