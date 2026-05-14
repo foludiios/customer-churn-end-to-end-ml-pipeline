@@ -14,7 +14,7 @@ def bucket_exists():
 def main():
     if not bucket_exists():
         inception.aws.main()
-    src.evaluate.main() # run this, then uvicorn, then ?
+    src.evaluate.main() # run this, then uvicorn, then ? 
     #src.predict.test()
 
 if __name__ == '__main__':
