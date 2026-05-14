@@ -19,7 +19,7 @@ def retrieval():
         retr_processor = joblib.load("preprocess.pkl")
 
     try:
-        with open("metadata.json", "r") as f:
+        with open("metadata.json", "r") as f: 
             metadata = json.load(f)
         threshold = metadata.get("threshold", 0.5)
     except Exception:
